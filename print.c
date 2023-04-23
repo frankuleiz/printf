@@ -2,7 +2,6 @@
 /**
  * _printf - outputs according to format
  * @format: string
- *
  * Return: pointer
  */
 int _printf(const char *format, ...)
@@ -23,8 +22,7 @@ int _printf(const char *format, ...)
 
 				putchar(c);
 				count++;
-			}
-			else if (*format == 's')
+			} else if (*format == 's')
 			{
 				char *s = va_arg(args, char *);
 
@@ -34,14 +32,12 @@ int _printf(const char *format, ...)
 					s++;
 					count++;
 				}
-			}
-			else if (*format == '%')
+			} else if (*format == '%')
 			{
 				putchar('%');
 				count++;
 			}
-		}
-		else
+		} else
 		{
 			putchar(*format);
 			count++;
