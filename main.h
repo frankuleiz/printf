@@ -8,7 +8,7 @@
 
 
 int _printf(const char *format, ...);
-int (*conversion(char s))(va_list, flags_t *);
+int (*get_print(char s))(va_list, flags_t *);
 
 #endif
 
