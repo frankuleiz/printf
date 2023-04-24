@@ -19,22 +19,22 @@ int print_binary(va_list args, flags_t *flags)
 	int num_bits = 1;
 
 	while (n >= (mask << 1))
-	
+
 		mask <<= 1;
 		num_bits++;
-	
+
 	while (num_bits > 0)
-	
+
 		if (n & mask)
-		
+
 			_putchar('1');
-	       	else
-		
+		else
+
 			_putchar('0');
-		
+
 		count++;
 		num_bits--;
 		mask >>= 1;
-	
+
 	return (count);
 }
