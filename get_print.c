@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *conversion - selects the right printing function
+ *get_print - selects the right printing function
  *@s: conversion specifier
  *Return: a pointer to the matching printing function
  */
