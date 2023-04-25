@@ -42,10 +42,12 @@ int print_bigS(va_list l, flags_t *f)
  * @r: string to print
  * Return: length of the printed string
  */
-int print_rev(va_list r)
+int print_rev(va_list r, flags_t *f)
 {
 	int i = 0, j;
 	char *s = va_arg(r, char *);
+
+	(void)f;
 
 
 	if (!s)
