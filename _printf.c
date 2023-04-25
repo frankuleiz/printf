@@ -2,7 +2,7 @@
 /**
  * _printf - printf function
  * @format: const char pointer
- * Return: b_len
+ * Return: count
  */
 int _printf(const char *format, ...)
 {
