@@ -38,31 +38,6 @@ int print_bigS(va_list l, flags_t *f)
 }
 
 /**
- * print_rev - prints a string in reverse
- * @r: string to print
- * Return: length of the printed string
- */
-int print_rev(va_list r, flags_t *f)
-{
-	int i = 0, j;
-	char *s = va_arg(r, char *);
-
-	(void)f;
-
-
-	if (!s)
-		s = "(null)";
-
-	while (s[i])
-		i++;
-
-	for (j = i - 1; j >= 0; j--)
-		_putchar(s[j]);
-
-	return (i);
-}
-
-/**
  * print_rot13 - prints a string using rot13
  * @l: list of arguments from _printf
  * @f: pointer to the struct flags that determines
