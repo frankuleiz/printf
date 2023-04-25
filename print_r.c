@@ -44,7 +44,7 @@ int print_bigS(va_list l, flags_t *f)
  * if a flag is passed to _printf
  * Return: length of the printed string
  */
-int print_rev(va_list l, flags_t *f)
+int print_rev(va_list r)
 {
 	int i = 0, j;
 	char *s = va_arg(l, char *);
